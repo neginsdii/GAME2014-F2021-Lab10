@@ -68,6 +68,7 @@ public class EnemyController : MonoBehaviour
                         
                         if((hit) && (hit.collider.gameObject.CompareTag("Player")))
                         {
+                            Debug.DrawLine(lookInFrontPoint.position, collider.transform.position, Color.red);
                             return true;
                         }
                     }
